@@ -1,0 +1,12 @@
+<form #formGrupObjRef="ngForm" (ngSubmit)="calculate(formGrupObjRef.form)">
+<fieldset>
+  <legend>Input Section</legend>
+  <p> Transaction Amount : <input type="text" name="amount" ngModel /> </p>
+  <p> Tenure : <input type="text"  name="tenure" ngModel /> </p>
+  <p> IR(%) : <input type="text" name="ir" ngModel /> </p>
+
+   <input type="submit" value="Calculate"/> &nbsp;&nbsp;
+    <input type="button" value="Clear" (click)="clear(formGrupObjRef.form)"/>
+
+</fieldset>
+</form>

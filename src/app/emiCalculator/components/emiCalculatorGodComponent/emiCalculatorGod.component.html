@@ -1,0 +1,4 @@
+<app-emi-input (inputChangedEvent)="onInputChanged($event)"></app-emi-input>
+<app-emi-summary-result  [emi]="emiCalculationResult.emi"
+                         [totalAmountPayable]="emiCalculationResult.totalAmount"
+                         [totalI]="emiCalculationResult.totalIntrest"></app-emi-summary-result>
